@@ -26,6 +26,7 @@ alter table citizen add adress varchar(100);
 update  Citizen set occupation="electrical tecgnician" where citizen_id=105;
 select * from Citizen;
 
+
 -- part-g
 -- id same (primary key)
 insert into Citizen(citizen_id,full_name,Dob, Gender,mobile_num, occupation,village_name,is_active)
@@ -35,7 +36,6 @@ values(101,"pallavi","2007-01-11","female",87988228,"student","east godavari",TR
 -- phn same(unique)
 insert into Citizen(citizen_id,full_name,Dob, Gender,mobile_num, occupation,village_name,is_active)
 values(112,"Meena","1998-11-30","female",80008892,"teacher","lakshmipuram",FALSE);
--- duplicate entry 
 
 
 

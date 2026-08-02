@@ -34,3 +34,16 @@ values(10010,1010,"pan","2026-01-01","bank account documentation","submitted",30
 -- foreign key
 insert into Certificate_application(application_id ,certificate_name,application_date,purpose,application_status,fee_paid,reference_number)
 values(10011,"recidentialcertificate","2026-07-01","bank account documentation","submitted",30.00,"gp20260001");
+
+-- week2
+
+
+
+
+
+
+
+
+
+
+

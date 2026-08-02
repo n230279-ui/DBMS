@@ -18,3 +18,5 @@ values (1,"ramapuram gramapanchayat","ramapuram",521101,0866000001,"ramapuram@gp
 
 alter table Panchayat_office add closing_time time;
 select*from Panchayat_office;
+
+-- week2

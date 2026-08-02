@@ -20,3 +20,22 @@ values (7,"income certificate","certifies the declear anuual income",4,50.00,TRU
  update  Certificate_type set processing_days=15 where certificate_type_id=5;
 update  Certificate_type set is_available=TRUE where certificate_type_id=6;
 select*from certificate_type;
+
+
+
+
+
+
+
+
+
+
+select 
+ca.application_id,
+ca.application_date,
+ct.,
+date_add(ca.application_date,  interval ct.processing_days day) as date
+from  certificate_application ca,certificate_type ct ON ca.application_id= ct.certificate_type_id;
+
+
+
