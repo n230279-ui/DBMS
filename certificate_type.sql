@@ -17,9 +17,11 @@ values (1,"recidentialcertificate","certifies the declear day of referance",7,30
 
 insert into certificate_type(certificate_type_id,certificate_name ,description,processing_days,application_fee,is_available)
 values (7,"income certificate","certifies the declear anuual income",4,50.00,TRUE);
+
  update  Certificate_type set processing_days=15 where certificate_type_id=5;
 update  Certificate_type set is_available=TRUE where certificate_type_id=6;
 select*from certificate_type;
+delete from certificate_type where certificate_type_id=7;
 
 
 
@@ -29,13 +31,6 @@ select*from certificate_type;
 
 
 
-
-select 
-ca.application_id,
-ca.application_date,
-ct.,
-date_add(ca.application_date,  interval ct.processing_days day) as date
-from  certificate_application ca,certificate_type ct ON ca.application_id= ct.certificate_type_id;
 
 
 
